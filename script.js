@@ -11,7 +11,9 @@ next.addEventListener('click', function (event) {
     // Xem hết bình luận
     return false
   }
+  
   translateY += -400
+
   comment.style.transform = `translateY(${translateY}px)`
   count--
 })

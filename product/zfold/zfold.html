@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web quản lí điện thoại </title>
+    <base href="http://127.0.0.1:5500/">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="product/product-style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="" class="logo">
+                <img src="assets/logo.png" alt="">
+            </a>
+            <div id="menu">
+                <div class="item">
+                    <a href="">Trang chủ</a>
+                </div>
+                <div class="item product ">
+                    <div>
+                        <a href="">Sản phẩm</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="">Liên hệ</a>
+                </div>
+            </div>
+            <div id="actions">
+                <div class="item">
+                    <img src="assets/user.png" alt="">
+                </div>
+                <div class="item">
+                    <img src="assets/cart.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div class="col-8">
+                <div class="col-8-4 product-imgs">
+                    <ul>
+                        <li>
+                            <img src="/product/zfold/anh2.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="/product/zfold/zfo.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-8-4 price">
+                        <div class="product-0">
+                                <div class="sale-price">34.990.000<span>VNĐ</span></div>
+                                <div class="promotion-price">
+                                   <div class="old-price">Giá cũ: <del>35.990.000</del> <span>VNĐ</span></div>
+                                   <div class="save-price">Giảm: <span >1.000.000</span> <span>VNĐ</span></div>
+                                </div>
+                                <div class="status">Tình trạng: <span style="color: #1a2;">Còn hàng</span></div>
+                        </div>   
+                        <div class="product-colors">
+                            <div class="title">Màu sắc</div>
+                            <div class="select-color">
+                                <div class="col-4-3">
+                                   <div class="color-inner active">
+                                    <div class="img-color">
+                                       <img src="/product/zfold/xanhreu.jpg" alt="" style=" width: 30px;
+                                       height: 30px;">
+                                    </div>
+                                    <div class="img-name">Green</div>
+                                    </div>
+                                </div>
+                                <div class="col-4-3">
+                                <div class="color-inner">
+                                    <div class="img-color">
+                                        <img src="/product/zfold/trang.png" alt="" style=" width: 30px;
+                                        height: 30px;">
+                                    </div>
+                                    <div class="img-name">White</div>
+                                </div>
+                                </div>
+                                <div class="col-4-3">
+                                 <div class="color-inner">
+                                    <div class="img-color">
+                                        <img src="/product/zfold/den.jpg" alt="" style=" width: 30px;
+                                        height: 30px;">
+                                    </div>
+                                    <div class="img-name">Black</div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-paycheck">
+                            <div class="col-4-3">
+                                <button type="submit" class="btn">
+                                    Mua ngay
+                                </button>
+                            </div>
+                            <div class="col-4-3">
+                                <div class="form-paycheck-center">
+                                    <button type="button" onclick="minusInput();" class="btn-minus">–</button>
+                                    <input type="text" class="qty input-text" id="qty" name="quantity" size="4" value="1" min="0" max="50" disabled>
+                                    <button type="button" onclick="plusInput();" class="btn-plus">+</button>
+                                </div>
+                            </div>
+                            <div class="col-4-3">
+                                <button type="submit" class="btn">
+                                    <button type="submit" class="btn">
+                                        Giỏ hàng
+                                    </button>
+                                </button>
+                            </div>
+                        </div>
+                 </div>
+             </div>
+             <div class="col-4">
+                <div class="online_support">
+                    <h2 class="title">CHÚNG TÔI LUÔN SẴN SÀNG<br>ĐỂ GIÚP ĐỠ BẠN</h2>
+                    <img src="/assets/onl-support.jpg">
+                    <h3 class="sub_title">Để được hỗ trợ tốt nhất. Hãy gọi</h3>
+                    <div class="phone">
+                      <a href="tel:18006750" title="1800 6750">1800 6750</a>
+                    </div>
+                    <div class="or"><span>HOẶC</span></div>
+                    <h3 class="title">Chat hỗ trợ trực tuyến</h3>
+                    <h3 class="sub_title">Chúng tôi luôn trực tuyến 24/7.</h3>
+                  </div>
+             </div>
+             <div class="col-8">
+                <div class="tab-desription">
+                    <div class="tab-header">
+                        Mô tả
+                    </div>
+                    <div class="tab-content">
+                        <div class="content-description">
+                            <h3 style="box-sizing: border-box; margin: 20px 0px 15px; padding: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 20px; line-height: 28px; font-family: Arial, Helvetica, sans-serif; color: #333333; outline: none;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 18px; outline: none;" title="Tham khảo giá điện thoại Samsung Galaxy Z Fold3 5G 512GB chính hãng" href="https://www.thegioididong.com/dtdd/samsung-galaxy-z-fold-3-512gb" target="_blank" rel="noopener">Galaxy Z Fold3 5G</a> đánh dấu bước tiến mới của <a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 18px; outline: none;" title="Tham khảo sản phẩm Samsung chính hãng tại Thegioididong.com" href="https://thegioididong.com/samsung" target="_blank" rel="noopener">Samsung</a> trong phân khúc <a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 18px; outline: none;" title="Tham khảo giá điện thoại smartphone chính hãng" href="https://www.thegioididong.com/dtdd" target="_blank" rel="noopener">điện thoại</a> gập cao cấp khi được cải tiến về độ bền cùng những nâng cấp đáng giá về cấu hình hiệu năng, hứa hẹn sẽ mang đến trải nghiệm sử dụng đột phá cho người dùng.</h3>
+<h3 style="box-sizing: border-box; margin: 20px 0px 15px; padding: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 20px; line-height: 28px; font-family: Arial, Helvetica, sans-serif; color: #333333; outline: none;">Đột phá thiết kế màn hình gập</h3>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Đầu tiên, khung viền Galaxy Z Fold3 được hoàn thiện bằng chất liệu Armor Aluminum cao cấp nhất từ trước đến giờ nhằm tăng cường được độ bền, mà vẫn đảm bảo được trọng lượng cân đối đem tới cảm giác vô cùng chắc chắn và cao cấp. </p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-23.jpg"><img class=" ls-is-cached lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Thiết kế khung viền cao cấp" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-23.jpg" alt="Samsung Galaxy Z Fold3 5G | Thiết kế khung viền cao cấp" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-23.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Nhờ đó, tổng thể máy cũng đã mỏng nhẹ hơn khi trọng lượng giảm xuống còn 271 g, độ dày phần bản lề khi gập lại còn 16 mm cho cảm giác cầm nắm, sử dụng điện thoại Z Fold3 giờ đây đã thoải mái và dễ chịu hơn rất nhiều.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-2.jpg"><img class=" ls-is-cached lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Trọng lượng giảm so với tiền nhiệm" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-2.jpg" alt="Samsung Galaxy Z Fold3 5G | Trọng lượng giảm so với tiền nhiệm" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-2.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Khi không dùng có thể gấp gọn như một cuốn sổ ghi chú nhỏ dễ dàng bỏ túi mang theo bên mình mọi lúc mọi nơi.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102514.jpg"><img class=" ls-is-cached lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Trạng thái khi gập" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102514.jpg" alt="Samsung Galaxy Z Fold3 5G | Trạng thái khi gập" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102514.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Đồng thời, Samsung còn tăng cường khả năng kháng nước trên Galaxy Fold3 chuẩn IPX8 khả dụng ở độ sâu 1.5 mét tối đa trong 30 phút, người dùng có thể an tâm sử dụng tại hồ bơi, thậm chí là dưới trời mưa.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-21.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Khả năng kháng nước chuẩn IPX8" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-21.jpg" alt="Samsung Galaxy Z Fold3 5G | Khả năng kháng nước chuẩn IPX8" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-21.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Ngoài ra, với <a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed;" title="Tham khảo giá điện thoại smartphone có bảo mật cảm biến vân tay" href="https://www.thegioididong.com/dtdd-bao-mat-van-tay" target="_blank" rel="noopener">cảm biến vân tay</a> ở cạnh bên, người dùng có thể nhanh chóng mở khóa và sử dụng chỉ bằng thao tác chạm nhẹ.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102533.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Cảm biến vân tay ở cạnh viền" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102533.jpg" alt="Samsung Galaxy Z Fold3 5G | Cảm biến vân tay ở cạnh viền" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102533.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Hệ thống loa kép stereo kích thước lớn ở 2 cạnh trên dưới tích hợp công nghệ Dolby Atmos cho trải nghiệm chơi game, xem phim đã tai với âm lượng lớn, rõ ràng và sống động.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102545.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Hệ thống loa kép, giải trí ấn tượng" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102545.jpg" alt="Samsung Galaxy Z Fold3 5G | Hệ thống loa kép, giải trí ấn tượng" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102545.jpg"></a></p>
+<h3 style="box-sizing: border-box; margin: 20px 0px 15px; padding: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 20px; line-height: 28px; font-family: Arial, Helvetica, sans-serif; color: #333333; outline: none;">Cụm camera đỉnh cao công nghệ</h3>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Kế đó, cụm camera trên Galaxy Z Fold3 bao gồm 3 ống kính: Camera góc rộng, <a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed;" title="Tham khảo giá điện thoại smartphone camera chụp hình góc rộng" href="https://www.thegioididong.com/dtdd-camera-goc-rong" target="_blank" rel="noopener">camera góc siêu rộng</a>, <a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed;" title="Tham khảo điện thoại có camera tele kinh doanh tại Thegioididong.com" href="https://www.thegioididong.com/dtdd-camera-zoom" target="_blank" rel="noopener">camera tele</a> tích hợp chống rung OIS và đều sở hữu độ phân giải 12 MP đặt trong cụm mô-đun hình chữ nhật được bo tròn 2 đầu trông rất thon gọn và đầy tinh tế.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102526.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Cụm camera đỉnh cao công nghệ" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102526.jpg" alt="Samsung Galaxy Z Fold3 5G | Cụm camera đỉnh cao công nghệ" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102526.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Chất lượng hình ảnh theo đánh giá nhanh là khá ổn, màu sắc tươi tắn, đặc biệt khả năng xử lý <a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed;" title="Tham khảo giá điện thoại smartphone camera chụp hình xoá phông" href="https://www.thegioididong.com/dtdd-camera-xoa-phong" target="_blank" rel="noopener">xóa phông</a> cũng đã cải thiện đáng kể, ít tình trạng bị lem như trước đây.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-3.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Giao diện camera" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-3.jpg" alt="Samsung Galaxy Z Fold3 5G | Giao diện camera" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-3.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Ngoài ra, máy còn sở hữu camera trước ở màn hình ngoài có độ phân giải 10 MP và camera trước ở màn hình trong sẽ được đặt ẩn dưới màn hình có độ phân giải 4 MP tất cả đều cho chất lượng ảnh tốt ngoài mong đợi.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-15.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Khả năng chụp ảnh selfie " src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-15.jpg" alt="Samsung Galaxy Z Fold3 5G | Khả năng chụp ảnh selfie " data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-15.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Đặc biệt, có chế độ Flex Mode khi gập màn hình theo nhiều góc độ, có thể chia ra 2 màn hình khi chụp ảnh, cho phép người dùng vừa chụp vừa xem lại các ảnh đã chụp, tránh sự trùng lặp, cũng dễ hơn trong việc tương tác với người hay vật mẫu để điều khiển các tư thế tạo dáng.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-13.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Ảnh chụp trên camera" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-13.jpg" alt="Samsung Galaxy Z Fold3 5G | Ảnh chụp trên camera" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-13.jpg"></a></p>
+<h3 style="box-sizing: border-box; margin: 20px 0px 15px; padding: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 20px; line-height: 28px; font-family: Arial, Helvetica, sans-serif; color: #333333; outline: none;">Nâng tầm giải trí màn hình gập với camera ẩn</h3>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Màn hình chính trên Z Fold3 có kích thước 7.6 inches, sử dụng tấm nền Dynamic AMOLED 2X cho độ phân giải 1768 x 2208 Pixels hỗ trợ khả năng hiển thị HDR10+ cùng độ sáng cao lên tới 1200 nits cho chất lượng hiển thị sắc nét, màu sắc sống động chân thực trong mọi điều kiện.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102520.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Nâng tầm giải trí màn hình tràn viền với camera ẩn" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102520.jpg" alt="Samsung Galaxy Z Fold3 5G | Nâng tầm giải trí màn hình tràn viền với camera ẩn" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102520.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Z Fold3 chính là chiếc <a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed;" title="Tham khảo giá điện thoại smartphone Samsung chính hãng" href="https://thegioididong.com/dtdd-samsung" target="_blank" rel="noopener">điện thoại Samsung</a> đầu tiên sử dụng công nghệ camera selfie ẩn dưới màn hình gập, đem tới khả năng hiển thị siêu tràn viền gần như không có khiếm khuyết, những tác vụ trên Samsung Galaxy Z Fold3 đều hiển thị một cách trọn vẹn sắc nét, từ vào mạng xã hội, lướt web cho đến xem phim, chơi game.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-25.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Màn hình giải trí tràn viền" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-25.jpg" alt="Samsung Galaxy Z Fold3 5G | Màn hình giải trí tràn viền" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-25.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Bên cạnh đó, màn hình ngoài trên Z Fold3 5G có kích thước 6.2 inch cũng sử dụng tấm nền Dynamic AMOLED 2X, độ phân giải 832 x 2268 Pixels và thiết kế Infinity-O tràn viền, được nâng cấp lên tần số quét 120 Hz cho khả năng vuốt chạm mượt mà.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102508.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Màn hình trước cũng hỗ trợ tần số quét 120 Hz" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102508.jpg" alt="Samsung Galaxy Z Fold3 5G | Màn hình trước cũng hỗ trợ tần số quét 120 Hz" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102508.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Về độ bền, Samsung tự hào tuyên bố Z Fold3 màn hình gập của mình được tối ưu hóa với độ bền hơn 80% so với trước đây cùng khả năng hạn chế các vết trầy xước và rơi vỡ ấn tượng nhờ được trang bị kính Ultra Thin Glass (UTG).</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-10.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Màn hình gập trang bị kính Ultra Thin Glass" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-10.jpg" alt="Samsung Galaxy Z Fold3 5G | Màn hình gập trang bị kính Ultra Thin Glass" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-10.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Galaxy Z Fold3 cũng hỗ trợ bút S Pen lần đầu được áp dụng trên điện thoại màn hình gập. Mọi thao ghi chú, phác thảo hoặc đánh dấu vào tài liệu đều được thực hiện một cách dễ dàng.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-27.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Hỗ trợ bút S Pen thông minh" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-27.jpg" alt="Samsung Galaxy Z Fold3 5G | Hỗ trợ bút S Pen thông minh" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-27.jpg"></a></p>
+<h3 style="box-sizing: border-box; margin: 20px 0px 15px; padding: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 20px; line-height: 28px; font-family: Arial, Helvetica, sans-serif; color: #333333; outline: none;">Hiệu năng hàng đầu với Snapdragon 888</h3>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Galaxy Z Fold3 được cung cấp sức mạnh bởi chip set Snapdragon 888 cho hiệu năng mạnh mẽ và khả năng xử lý mọi tác vụ đều trở nên nhanh chóng mượt mà trên cả hai màn hình.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb---8.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Hiệu năng mạnh mẽ hàng đầu" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb---8.jpg" alt="Samsung Galaxy Z Fold3 5G | Hiệu năng mạnh mẽ hàng đầu" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb---8.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Dung lượng <a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed;" title="Tham khảo điện thoại có dung lượng RAM 12 GB đang bán tại TGDĐ" href="https://www.thegioididong.com/dtdd-ram-12gb" target="_blank" rel="noopener">RAM 12 GB</a> cho khả năng đa nhiệm tuyệt vời nay lại còn tích hợp thêm tính năng Multi-Active Window, giúp người dùng có thể chạy và tương tác song song giữa hai ứng dụng hoặc chạy tối đa 3 ứng dụng cùng lúc trên màn hình vừa xem phim, vừa nhắn tin hay đọc báo. </p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb---4.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Khả năng đa nhiệm nhiều ứng dụng cùng lúc" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb---4.jpg" alt="Samsung Galaxy Z Fold3 5G | Khả năng đa nhiệm nhiều ứng dụng cùng lúc" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb---4.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Đi kèm với đó là <a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed;" title="Tham khảo điện thoại có bộ nhớ trong từ 512 GB đang bán tại TGDĐ" href="https://www.thegioididong.com/dtdd-rom-512gb" target="_blank" rel="noopener">bộ nhớ trong 512 GB</a> cho bạn thoải mái lưu trữ dữ liệu để làm việc, giải trí hay cài đặt các ứng dụng nặng mà không cần lo đến việc đầy bộ nhớ.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-18.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Hỗ trợ bộ nhớ trong 512 GB" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-18.jpg" alt="Samsung Galaxy Z Fold3 5G | Hỗ trợ bộ nhớ trong 512 GB" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-18.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Điểm hiệu năng đo nhanh bằng AnTuTu đạt hơn 750 nghìn điểm, chơi mượt mà các tựa game nặng ký như Genshin Impact, Call of Duty Mobile ở thiết lập đồ họa cao.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb---7.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Điểm Antutu ấn tượng" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb---7.jpg" alt="Samsung Galaxy Z Fold3 5G | Điểm Antutu ấn tượng" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb---7.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Ngoài ra, Galaxy Z Fold3 cũng được cải thiện khả năng tản nhiệt khi chơi game, hoàn toàn khắc phục được tình trạng nóng máy như trên các dòng máy sử dụng chip Snapdragon 888 khác. </p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-8.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Khả năng giải trí chơi game mượt mà" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-8.jpg" alt="Samsung Galaxy Z Fold3 5G | Khả năng giải trí chơi game mượt mà" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-8.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Samsung Galaxy Z Fold3 cũng được trang bị chuẩn kết nối internet 5G cho khả năng kết nối internet tốc độ siêu cao giúp bạn có thể truy cập sử dụng mạng internet mọi lúc mọi nơi.</p>
+<h3 style="box-sizing: border-box; margin: 20px 0px 15px; padding: 0px; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; font-size: 20px; line-height: 28px; font-family: Arial, Helvetica, sans-serif; color: #333333; outline: none;">Thời lượng pin thoải mái sử dụng giải trí</h3>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Về pin, Samsung cho biết Z Fold3 sở hữu pin dung lượng 4.400 mAh, thấp hơn một chút so với người tiền nhiệm nhưng nhu cầu sử dụng vẫn đáp ứng tốt trong một ngày.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102552.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Thời lượng pin sử dụng cả ngày" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102552.jpg" alt="Samsung Galaxy Z Fold3 5G | Thời lượng pin sử dụng cả ngày" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102552.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Bên canh đó, điện thoại cũng hỗ trợ <a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed;" title="Tham khảo giá điện thoại smartphone sạc pin nhanh" href="https://www.thegioididong.com/dtdd-sac-pin-nhanh" target="_blank" rel="noopener">sạc nhanh</a> 25 W, sạc không dây hay chia sẻ pin không dây giúp nạp đầy năng lượng cho các thiết bị ngoại vi khác một cách dễ dàng và nhanh chóng.</p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;"><a class="preventdefault" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed; cursor: default;" href="https://www.thegioididong.com/images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102539.jpg"><img class=" lazyloaded" style="box-sizing: border-box; margin: 20px auto; padding: 0px; border: 0px; height: auto !important; max-width: 100%; display: block;" title="Samsung Galaxy Z Fold3 5G | Khả năng sạc nhanh 25 W" src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102539.jpg" alt="Samsung Galaxy Z Fold3 5G | Khả năng sạc nhanh 25 W" data-src="https://cdn.tgdd.vn/Products/Images/42/248284/samsung-galaxy-z-fold3-5g-512gb-060921-102539.jpg"></a></p>
+<p style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision; line-height: 1.5; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 16px !important;">Nhìn chung, Galaxy Z Fold 3 mang trong mình một cấu hình "đụng nóc" trong thế giới <a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #2f80ed;" title="Tham khảo giá điện thoại smartphone Android chính hãng" href="https://www.thegioididong.com/dtdd?g=android" target="_blank" rel="noopener">Android</a> hiện nay, kết hợp với màn hình 120 Hz và bút S-Pen thần thánh có thể nói đây sẽ là thiết bị công nghệ phục vụ cho công việc hay giải trí rất đáng để sở hữu.</p>
+  </div>
+                    </div>
+                </div>
+             </div>
+             <div class="col-4">
+                <div class="infomation-detail">
+                    <div class="infomation-header">
+                      <h2 class="title">Thông Số Kỹ Thuật</h2>
+                    </div>
+                    <div class="infomation-content">
+                        <ul>
+                          <li><label>Màn Hình:</label>Dynamic AMOLED 2XChính 7.6&quot; &amp; Phụ 6.2&quot;Full HD+</li>
+                          <li><label>Camera Trước:</label>10 MP &amp; 4 MP</li>
+                          <li><label>Camera Sau:</label>3 camera 12 MP</li>
+                          <li><label>Ram:</label>12 GB</li>
+                          <li><label>Bộ Nhớ Trong:</label>512 GB</li>
+                          <li><label>CPU:</label>Snapdragon 888</li>
+                          <li><label>GPU:</label>Tiêu Chuẩn</li>
+                          <li><label>Dung Lượng Pin:</label>4400 mAh25 W</li>
+                          <li><label>Hệ Điều Hành:</label>Android</li>
+                        </ul>
+                      </div>
+                    <div class="more-infomation">
+                      <button class="btn btn-primary">
+                        Xem cấu hình chi tiết
+                      </button>
+                    </div>
+                </div>
+             </div>       
+        </div>
+        <div id="footer">
+            <div class="box">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="">
+                </div>
+                <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+            </div>
+            <div class="box">
+                <h3>NỘI DUNG</h3>
+                <ul class="quick-menu">
+                    <div class="item">
+                        <a href="">Trang chủ</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Sản phẩm</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Blog</a>
+                    </div>
+                    <div class="item">
+                        <a href="">Liên hệ</a>
+                    </div>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>LIÊN HỆ</h3>
+                <form action="">
+                    <input type="text" placeholder="Địa chỉ email">
+                    <button>Nhận tin</button>
+                </form>
+            </div>
+        </div>
+        <div class="modal-content">
+            <div class="modal-container">
+                <div class="modal-header">
+                    <button type="button" class="close"><i class="fas fa-times"></i></button>
+                    <h4 class="modal-title">Thông Số Kĩ Thuật Chi Tiết</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="content">
+</div>
+<div class="content-t-wrap" style="box-sizing: border-box; margin: auto; padding: 20px 0px; max-width: 700px; color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 14px; background-color: #ffffff;">
+<div class="parameter-all" style="box-sizing: border-box; margin: 0px; padding: 0px;">
+<div class="parameter-item" style="box-sizing: border-box; margin: 0px; padding: 0px 30px;">
+<p class="parameter-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px; margin-block: 0px; text-rendering: geometricprecision; background-color: #f1f1f1; font-size: 16px; font-weight: bold;" data-group-id="29" data-index="1">Màn hình</p>
+<ul class="ulist" style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;">
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="6459" data-group-id="29" data-index="1">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Công nghệ màn hình:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/tim-hieu-man-hinh-dynamic-amoled-2x-tren-smartphone-1245213" target="_blank" rel="noopener">Dynamic AMOLED 2X</a></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="78" data-group-id="29" data-index="2">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Độ phân giải:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/tin-tuc/do-phan-giai-man-hinh-qhd-hd-fullhd-2k-4k-la-gi--592178#fullhd" target="_blank" rel="noopener">Full HD+ (1768 x 2208 Pixels)</a></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="27278" data-group-id="29" data-index="3">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Màn hình rộng:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">Chính 7.6" & Phụ 6.2" - Tần số quét 120 Hz</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="27392" data-group-id="29" data-index="6">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Độ sáng tối đa:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">Chính 1200 nits & Phụ 1500 nits</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: none; display: flex;" data-id="7799" data-group-id="29" data-index="7">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Mặt kính cảm ứng:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/tim-hieu-kinh-cuong-luc-corning-gorilla-glass-victus-1284586" target="_blank" rel="noopener">Kính cường lực Corning Gorilla Glass Victus</a></div>
+</li>
+</ul>
+</div>
+<div class="parameter-item" style="box-sizing: border-box; margin: 0px; padding: 0px 30px;">
+<p class="parameter-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px; margin-block: 0px; text-rendering: geometricprecision; background-color: #f1f1f1; font-size: 16px; font-weight: bold;" data-group-id="1841" data-index="2">Camera sau</p>
+<ul class="ulist" style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;">
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="27" data-group-id="1841" data-index="1">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/do-phan-giai-camera-tren-smartphone-la-gi-1339722">Độ phân giải:</a></div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">3 camera 12 MP</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="31" data-group-id="1841" data-index="2">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Quay phim:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;">
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-chuan-quay-phim-tren-dien-thoai-tablet-pho-bi-1174134#4k" target="_blank" rel="noopener">4K 2160p@60fps</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-chuan-quay-phim-tren-dien-thoai-tablet-pho-bi-1174134#fullhd" target="_blank" rel="noopener">FullHD 1080p@240fps</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-chuan-quay-phim-tren-dien-thoai-tablet-pho-bi-1174134#fullhd" target="_blank" rel="noopener">FullHD 1080p@60fps</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/quay-phim-sieu-cham-super-slow-motion-960fps-la-1144253" target="_blank" rel="noopener">HD 720p@960fps</a></p>
+</div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="6460" data-group-id="1841" data-index="3">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Đèn Flash:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/tim-hieu-cac-loai-den-flash-tren-camera-dien-thoai-1143808" target="_blank" rel="noopener">Có</a></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: none; display: flex;" data-id="28" data-group-id="1841" data-index="4">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Tính năng:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;">
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/ai-camera-la-gi-co-tac-dung-gi-trong-may-anh-1169103" target="_blank" rel="noopener">AI Camera</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/che-do-chup-dem-night-mode-la-gi-907873" target="_blank" rel="noopener">Ban đêm (Night Mode)</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/che-do-chup-anh-manual-mode-pro-tren-smartphone-906405" target="_blank" rel="noopener">Chuyên nghiệp (Pro)</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/che-do-touch-focus-khi-chup-anh-tren-smartphone-906412" target="_blank" rel="noopener">Chạm lấy nét</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/che-do-chong-rung-quang-hoc-ois-chup-anh-tren-sm-906416" target="_blank" rel="noopener">Chống rung quang học (OIS)</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/camera-goc-rong-goc-sieu-rong-tren-smartphone-l-1172240" target="_blank" rel="noopener">Góc rộng (Wide)</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/camera-goc-rong-goc-sieu-rong-tren-smartphone-l-1172240" target="_blank" rel="noopener">Góc siêu rộng (Ultrawide)</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/che-do-chup-anh-hdr-tren-smartphone-la-gi-906400" target="_blank" rel="noopener">HDR</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/che-do-lam-dep-beautify-tren-smartphone-tablet-1172231" target="_blank" rel="noopener">Làm đẹp</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/tim-hieu-cong-nghe-lay-net-theo-pha-tren-smartph-1007275" target="_blank" rel="noopener">Lấy nét theo pha (PDAF)</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/chuc-nang-nhan-dien-khuon-mat-la-gi-907903" target="_blank" rel="noopener">Nhận diện khuôn mặt</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/che-do-quay-video-slow-motion-la-gi-luu-y-khi-quay-video-1013728" target="_blank" rel="noopener">Quay chậm (Slow Motion)</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/quay-phim-sieu-cham-super-slow-motion-960fps-la-gi-1144253" target="_blank" rel="noopener">Quay Siêu chậm (Super Slow Motion)</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/chup-anh-panorama-toan-canh-tren-camera-cua-smar-906425" target="_blank" rel="noopener">Toàn cảnh (Panorama)</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/che-do-autofocus-trong-chup-anh-tren-smartphone-906408" target="_blank" rel="noopener">Tự động lấy nét (AF)</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/chup-anh-xoa-phong-la-gi-no-co-tac-dung-nhu-the-na-1138006" target="_blank" rel="noopener">Xóa phông</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/zoom-quang-hoc-va-zoom-ky-thuat-so-la-gi-co-gi-khac-nhau-1296828#zoom-quang-hoc" target="_blank" rel="noopener">Zoom quang học</a></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="parameter-item" style="box-sizing: border-box; margin: 0px; padding: 0px 30px;">
+<p class="parameter-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px; margin-block: 0px; text-rendering: geometricprecision; background-color: #f1f1f1; font-size: 16px; font-weight: bold;" data-group-id="2701" data-index="3">Camera trước</p>
+<ul class="ulist" style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;">
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="29" data-group-id="2701" data-index="1">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/do-phan-giai-camera-tren-smartphone-la-gi-1339722">Độ phân giải:</a></div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">10 MP & 4 MP</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: none; display: flex;" data-id="7801" data-group-id="2701" data-index="4">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Tính năng:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;">
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/che-do-chup-anh-hdr-tren-smartphone-la-gi-906400" target="_blank" rel="noopener">HDR</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/che-do-lam-dep-beautify-tren-smartphone-tablet-1172231" target="_blank" rel="noopener">Làm đẹp</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/chuc-nang-nhan-dien-khuon-mat-la-gi-907903" target="_blank" rel="noopener">Nhận diện khuôn mặt</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-chuan-quay-phim-tren-dien-thoai-tablet-pho-1174134#4k" target="_blank" rel="noopener">Quay video 4K</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-chuan-quay-phim-tren-dien-thoai-tablet-pho-1174134#fullhd" target="_blank" rel="noopener">Quay video Full HD</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-chuan-quay-phim-tren-dien-thoai-tablet-pho-1174134#hd" target="_blank" rel="noopener">Quay video HD</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/che-do-autofocus-trong-chup-anh-tren-smartphone-906408" target="_blank" rel="noopener">Tự động lấy nét (AF)</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/chup-anh-xoa-phong-la-gi-no-co-tac-dung-nhu-the-na-1138006" target="_blank" rel="noopener">Xóa phông</a></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="parameter-item" style="box-sizing: border-box; margin: 0px; padding: 0px 30px;">
+<p class="parameter-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px; margin-block: 0px; text-rendering: geometricprecision; background-color: #f1f1f1; font-size: 16px; font-weight: bold;" data-group-id="2121" data-index="4">Hệ điều hành & CPU</p>
+<ul class="ulist" style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;">
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="72" data-group-id="2121" data-index="1">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Hệ điều hành:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/android-11-la-gi-co-gi-moi-thiet-bi-nao-duoc-cap-nhat-1306447" target="_blank" rel="noopener">Android 11</a></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="6059" data-group-id="2121" data-index="2">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Chip xử lý (CPU):</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/chip-snapdragon-888-la-gi-hieu-nang-manh-the-nao-1337297" target="_blank" rel="noopener">Snapdragon 888 8 nhân</a></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="51" data-group-id="2121" data-index="4">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/toc-do-cpu-la-gi-co-y-nghia-gi-trong-cac-thiet-bi-dien-tu-1299483">Tốc độ CPU:</a></div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">1 nhân 2.84 GHz, 3 nhân 2.4 GHz & 4 nhân 1.8 GHz</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: none; display: flex;" data-id="6079" data-group-id="2121" data-index="5">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Chip đồ họa (GPU):</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/tim-hieu-mot-so-san-pham-do-hoa-cua-adreno-600-series-1370412#adreno660" target="_blank" rel="noopener">Adreno 660</a></div>
+</li>
+</ul>
+</div>
+<div class="parameter-item" style="box-sizing: border-box; margin: 0px; padding: 0px 30px;">
+<p class="parameter-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px; margin-block: 0px; text-rendering: geometricprecision; background-color: #f1f1f1; font-size: 16px; font-weight: bold;" data-group-id="22" data-index="5">Bộ nhớ & Lưu trữ</p>
+<ul class="ulist" style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;">
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="50" data-group-id="22" data-index="1">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/ram-la-gi-co-y-nghia-gi-trong-cac-thiet-bi-dien-t-1216259">RAM:</a></div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">12 GB</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="49" data-group-id="22" data-index="2">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Bộ nhớ trong:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">512 GB</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="7803" data-group-id="22" data-index="3">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Bộ nhớ còn lại (khả dụng) khoảng:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">454 GB</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: none; display: flex;" data-id="54" data-group-id="22" data-index="11">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Danh bạ:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">Không giới hạn</span></div>
+</li>
+</ul>
+</div>
+<div class="parameter-item" style="box-sizing: border-box; margin: 0px; padding: 0px 30px;">
+<p class="parameter-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px; margin-block: 0px; text-rendering: geometricprecision; background-color: #f1f1f1; font-size: 16px; font-weight: bold;" data-group-id="24" data-index="6">Kết nối</p>
+<ul class="ulist" style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;">
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="7761" data-group-id="24" data-index="3">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Mạng di động:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/mang-5g-la-gi-co-nhung-uu-diem-gi-so-voi-4g-1312277" target="_blank" rel="noopener">Hỗ trợ 5G</a></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="6339" data-group-id="24" data-index="6">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">SIM:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">2 Nano SIM + 1 eSIM</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="66" data-group-id="24" data-index="7">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Wifi:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;">
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/wifi-dual-band-la-gi-736489" target="_blank" rel="noopener">Dual-band (2.4 GHz/5 GHz)</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/wi-fi-chuan-80211ax-la-gi-tim-hieu-ve-wi-fi-the-1187524" target="_blank" rel="noopener">Wi-Fi 802.11 a/b/g/n/ac/ax</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/tin-tuc/wi-fi-direct-la-gi--590298" target="_blank" rel="noopener">Wi-Fi Direct</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/tin-tuc/wifi-la-gi-cai-dat-wifi-hotspot-nhu-the-nao--590309#wifihotspot" target="_blank" rel="noopener">Wi-Fi hotspot</a></p>
+</div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="68" data-group-id="24" data-index="8">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">GPS:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;">
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/gps-la-gi-806129#bds" target="_blank" rel="noopener">BDS</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;">BEIDOU</p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/gps-la-gi-806129#galileo" target="_blank" rel="noopener">GALILEO</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/gps-la-gi-806129#glonass" target="_blank" rel="noopener">GLONASS</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/gps-la-gi-806129#a-gps" target="_blank" rel="noopener">GPS</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;">QZSS</p>
+</div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="69" data-group-id="24" data-index="9">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Bluetooth:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;">
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cong-nghe-bluetooth-a2dp-la-gi-723725" target="_blank" rel="noopener">A2DP</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cong-nghe-bluetooth-743602#le" target="_blank" rel="noopener">LE</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/bluetooth-52-la-gi-1363503" target="_blank" rel="noopener">v5.2</a></p>
+</div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="71" data-group-id="24" data-index="11">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Cổng kết nối/sạc:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/usb-typec-chuan-muc-cong-ket-noi-moi-723760" target="_blank" rel="noopener">Type-C</a></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="48" data-group-id="24" data-index="12">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Jack tai nghe:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/usb-typec-chuan-muc-cong-ket-noi-moi-723760" target="_blank" rel="noopener">Type-C</a></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: none; display: flex;" data-id="5199" data-group-id="24" data-index="13">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Kết nối khác:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="comma" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/ket-noi-nfc-tren-dien-thoai-may-tinh-bang-la-gi-1172835" target="_blank" rel="noopener">NFC</a><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/ket-noi-otg-la-gi-otg-duoc-su-dung-cho-muc-dich-gi-1172882" target="_blank" rel="noopener">OTG</a></div>
+</li>
+</ul>
+</div>
+<div class="parameter-item" style="box-sizing: border-box; margin: 0px; padding: 0px 30px;">
+<p class="parameter-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px; margin-block: 0px; text-rendering: geometricprecision; background-color: #f1f1f1; font-size: 16px; font-weight: bold;" data-group-id="2122" data-index="8">Pin & Sạc</p>
+<ul class="ulist" style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;">
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="84" data-group-id="2122" data-index="2">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Dung lượng pin:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">4400 mAh</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="83" data-group-id="2122" data-index="2">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Loại pin:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/tim-hieu-pin-li-ion-la-gi-985040" target="_blank" rel="noopener">Li-Ion</a></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="26846" data-group-id="2122" data-index="3">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Hỗ trợ sạc tối đa:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">25 W</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: none; display: flex;" data-id="10859" data-group-id="2122" data-index="5">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Công nghệ pin:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;">
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cong-nghe-sac-khong-day-la-gi-761328" target="_blank" rel="noopener">Sạc không dây</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cong-nghe-sac-nhanh-tren-smartphone-755549" target="_blank" rel="noopener">Sạc pin nhanh</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/che-do-tiet-kiem-pin-va-sieu-tiet-kiem-pin-la-gi-926730" target="_blank" rel="noopener">Tiết kiệm pin</a></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="parameter-item" style="box-sizing: border-box; margin: 0px; padding: 0px 30px;">
+<p class="parameter-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px; margin-block: 0px; text-rendering: geometricprecision; background-color: #f1f1f1; font-size: 16px; font-weight: bold;" data-group-id="19" data-index="9">Tiện ích</p>
+<ul class="ulist" style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;">
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="10860" data-group-id="19" data-index="1">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Bảo mật nâng cao:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/tim-hieu-bao-mat-mo-khoa-van-tay-canh-vien-tren-smartphone-1286767" target="_blank" rel="noopener">Mở khoá vân tay cạnh viền</a></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="43" data-group-id="19" data-index="2">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Tính năng đặc biệt:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="comma" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/huong-dan-thanh-toan-bang-samsung-pay-va-mot-so-di-1038798" target="_blank" rel="noopener">Samsung Pay</a><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/tim-hieu-cong-nghe-am-thanh-akg-985993" target="_blank" rel="noopener">Âm thanh AKG</a></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="27511" data-group-id="19" data-index="3">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Kháng nước, bụi:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">IPX8</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="36" data-group-id="19" data-index="4">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Ghi âm:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">Có</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="32" data-group-id="19" data-index="6">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Xem phim:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;">
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-dinh-dang-video-va-am-thanh-740243#3gp" target="_blank" rel="noopener">3GP</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-dinh-dang-video-va-am-thanh-740243#avi" target="_blank" rel="noopener">AVI</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-dinh-dang-video-va-am-thanh-740243#h264" target="_blank" rel="noopener">H.264(MPEG4-AVC)</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-dinh-dang-video-va-am-thanh-740243#mp4" target="_blank" rel="noopener">MP4</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-dinh-dang-video-va-am-thanh-740243#wmv" target="_blank" rel="noopener">WMV</a></p>
+</div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: none; display: flex;" data-id="33" data-group-id="19" data-index="7">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Nghe nhạc:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;">
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-dinh-dang-video-va-am-thanh-740243#aac" target="_blank" rel="noopener">AAC</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-dinh-dang-video-va-am-thanh-740243#amr" target="_blank" rel="noopener">AMR</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-dinh-dang-video-va-am-thanh-740243#flac" target="_blank" rel="noopener">FLAC</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-dinh-dang-video-va-am-thanh-740243#midi" target="_blank" rel="noopener">Midi</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-dinh-dang-video-va-am-thanh-740243#mp3" target="_blank" rel="noopener">MP3</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-dinh-dang-video-va-am-thanh-740243#ogg" target="_blank" rel="noopener">OGG</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-dinh-dang-video-va-am-thanh-740243#wav" target="_blank" rel="noopener">WAV</a></p>
+<p class="circle" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 8px; margin-block: 0px; text-rendering: geometricprecision; position: relative;"><a style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/hoi-dap/cac-dinh-dang-video-va-am-thanh-740243#wma" target="_blank" rel="noopener">WMA</a></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="parameter-item" style="box-sizing: border-box; margin: 0px; padding: 0px 30px 70px;">
+<p class="parameter-ttl" style="box-sizing: border-box; margin: 0px; padding: 10px; margin-block: 0px; text-rendering: geometricprecision; background-color: #f1f1f1; font-size: 16px; font-weight: bold;" data-group-id="28" data-index="10">Thông tin chung</p>
+<ul class="ulist" style="box-sizing: border-box; margin: 0px; padding: 0px; list-style: none;">
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="7804" data-group-id="28" data-index="1">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Thiết kế:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><a class="" style="box-sizing: border-box; margin: 0px; padding: 0px; text-decoration-line: none; transition: all 0.2s ease 0s; color: #4a90e2;" href="https://www.thegioididong.com/tin-tuc/tim-hieu-cac-kieu-thiet-ke-tren-di-dong-va-may-tin-597153#nguyenkhoi" target="_blank" rel="noopener">Nguyên khối</a></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="7805" data-group-id="28" data-index="2">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Chất liệu:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">Khung nhôm & Mặt lưng kính cường lực</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: 1px solid #f1f1f1; display: flex;" data-id="88" data-group-id="28" data-index="3">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Kích thước, khối lượng:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">Dài 158.2 mm - Ngang 128.1 mm - Dày 6.4 mm - Nặng 271 g</span></div>
+</li>
+<li style="box-sizing: border-box; margin: 0px; padding: 10px; border-bottom: none; display: flex;" data-id="13045" data-group-id="28" data-index="100">
+<div class="ctLeft" style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold; line-height: 21px; width: 186px;">
+<p style="box-sizing: border-box; margin: 0px; padding: 0px; margin-block: 0px; text-rendering: geometricprecision;">Thời điểm ra mắt:</p>
+</div>
+<div class="ctRight" style="box-sizing: border-box; margin: 0px; padding: 0px 0px 0px 10px; line-height: 21px; width: 434px;"><span class="" style="box-sizing: border-box; margin: 0px; padding: 0px;">08/2021</span></div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-danger" >Close</button>
+        </div>
+                  </div>
+                </div>
+        </div>
+    </div>
+    <script>
+        const openn = document.querySelector('.btn-primary')
+        const showw = document.querySelector('.modal-content')
+        const closee = document.querySelector('.close ')
+        const closeE = document.querySelector('.btn-danger')
+        const clOsee = document.querySelector('.modal-content')
+        const modalContainer = document.querySelector('.modal-container')
+        
+        function showAlert () {
+            showw.classList.add('open')
+        }
+        function turnof () {
+            showw.classList.remove('open')
+        }
+        openn.addEventListener('click', showAlert)
+        closee.addEventListener('click',turnof)
+        closeE.addEventListener('click',turnof)
+        clOsee.addEventListener('click',turnof)
+        modalContainer.addEventListener('click',function(event){
+            event.stopPropagation() 
+        })
+        
+    </script>
+</body>

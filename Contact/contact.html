@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../style.css">
+    <!-- <base href="http://127.0.0.1:5503/"> -->
+</head>
+<body>
+    <div id="header">
+        <a href="" class="logo">
+            <img src="assets/logo.png" alt="">
+        </a>
+        <div id="menu">
+            <div class="item">
+                <a href="../index.html">Trang chủ</a>
+            </div>
+            <div class="item">
+                <a href="/Sp/sp.html">Sản phẩm</a>
+            </div>
+            <div class="item">
+                <a href="../Blog/blog1.html">Blog</a>
+            </div>
+            <div class="item">
+                <a href="#">Liên hệ</a>
+            </div>
+            <div class="item">
+                <a href="../BH/bh.html">Chính sách Bảo Hành</a>
+            </div>
+        </div>
+        <div id="actions">
+            <div class="item">
+               <button style="border: 0; cursor:pointer " class="button-login js-button-login"><img src="assets/user.png" alt=""></button> 
+            </div>
+            <div class="item">
+                <button style="border:0;cursor:pointer " class="button-login js-button-login"><img src="assets/cart.png" alt=""></button> 
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="contact-container">
+            <div class="form-container">
+                <h1>Liên hệ</h1>
+                <form action="" class="contact-form">
+                    <input type="text" placeholder="Họ tên của bạn" required>
+                    <input type="text" placeholder="Số điện thoại" required>
+                    <input type="email" name="" id="" placeholder="Email của bạn" required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Nội dung..." required></textarea>
+                    <input type="submit" value="Send" class="send-button">
+                </form> 
+                               
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2214.372450401354!2d105.80234006760413!3d21.028055625204367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab424a50fff9%3A0xbe3a7f3670c0a45f!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBHaWFvIHRow7RuZyBW4bqtbiB04bqjaQ!5e0!3m2!1svi!2s!4v1666085368283!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </section>
+    <div id="footer">
+        <div class="box">
+            <div class="logo">
+                <img src="assets/img/logo.png" alt="">
+            </div>
+            <p>Cung cấp sản phẩm với chất lượng an toàn cho quý khách</p>
+        </div>
+        <div class="box">
+            <h3>NỘI DUNG</h3>
+            <ul class="quick-menu">
+                <div class="item">
+                    <a href="../index.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="/Sp/sp.html">Sản phẩm</a>
+                </div>
+                <div class="item">
+                    <a href="../Blog/blog1.html">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="#">Liên hệ</a>
+                </div>
+                <div class="item">
+                    <a href="../BH/bh.html">Chính sách bảo hành</a>
+                </div>
+
+            </ul>
+        </div>
+        <div class="box">
+            <h3>LIÊN HỆ</h3>
+            <form action="">
+                <input type="text" placeholder="Địa chỉ email">
+                <button>Nhận tin</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-overlay">
+           
+
+            <div class="modal-main">
+
+                <!-- <i class="close-modal  ti-close"></i> -->
+                <div class="header-modal">
+                    
+                    <p href="" class="login">Đăng Nhập</p>
+                   <div class=" js-modal-close " style="cursor: pointer;">X
+                     <i class=" js-modal-close close-modal  ti-close"></i>
+                    </div> 
+                </div>
+                <div class="content-modal">
+                    <input type="text" placeholder="  Tên Đăng Nhập" class="content-function">
+                    <input type="text" placeholder="  Mật Khẩu" class="content-function">
+                   
+                  <button class="access-modal"> <p class="access-text"> Đăng Nhập</p>  </button>
+                  <div class="container-password">
+
+                      <p class="forget-password">Quên mật khẩu</p>
+                      <div class="clear"></div>
+                  </div>
+                    
+                </div>
+                <div class="footer-modal">
+                    <div class="row">
+                        <div class="col-half">
+
+                            <a href="" class="facebook  "> <i class="ti-facebook"></i>   Facebook</a>
+                        </div>
+                        <div class="col-half">
+
+                            <a href="" class="google  "> <i class="ti-google"></i>    Google</a>
+                        </div>
+                    </div>
+                
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        const Btn=document.querySelector('.js-button-login')
+        const modal=document.querySelector('.modal')
+        const btnclose =document.querySelector('.js-modal-close')
+        function showModal(){
+            //  modal.classList.add('open')
+           modal.classList.add('open')
+        }
+
+        function closeModal(){
+            modal.classList.remove('open')
+        }
+        Btn.addEventListener('click',showModal)
+     btnclose.addEventListener('click',closeModal)
+    </script>
+</body>
+</html>
